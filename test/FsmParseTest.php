@@ -39,16 +39,16 @@ class FsmParseTest extends \PHPUnit\Framework\TestCase
     }
 
     public function testGetTransitionList(){
-        $this->assertEquals("aç+VERB^DB+VERB+PASS+POS+AOR+A3SG", $this->parse1->toString__());
-        $this->assertEquals("kop+VERB^DB+VERB+CAUS^DB+VERB+PASS+POS^DB+ADV+BYDOINGSO", $this->parse2->toString__());
-        $this->assertEquals("topla+NOUN+A3SG+P1SG+DAT", $this->parse3->toString__());
-        $this->assertEquals("değer+NOUN+A3SG+PNON+NOM^DB+VERB+ACQUIRE^DB+VERB+CAUS+POS^DB+NOUN+INF2+A3SG+PNON+LOC", $this->parse4->toString__());
-        $this->assertEquals("sor+VERB+RECIP^DB+VERB+CAUS+POS^DB+NOUN+INF2+A3SG+P3SG+GEN", $this->parse5->toString__());
-        $this->assertEquals("karşı+ADJ^DB+VERB+BECOME^DB+VERB+CAUS+POS+NECES+A3SG", $this->parse6->toString__());
-        $this->assertEquals("esas+ADJ^DB+NOUN+ZERO+A3PL+P2SG+ACC", $this->parse7->toString__());
-        $this->assertEquals("güç+ADJ^DB+NOUN+ZERO+A3PL+P3PL+INS", $this->parse8->toString__());
-        $this->assertEquals("bul+VERB+NEG^DB+ADJ+FUTPART+P3PL", $this->parse9->toString__());
-        $this->assertEquals("mi+QUES+PRES+A3SG", $this->parse10->toString__());
+        $this->assertEquals("aç+VERB^DB+VERB+PASS+POS+AOR+A3SG", $this->parse1->__toString());
+        $this->assertEquals("kop+VERB^DB+VERB+CAUS^DB+VERB+PASS+POS^DB+ADV+BYDOINGSO", $this->parse2->__toString());
+        $this->assertEquals("topla+NOUN+A3SG+P1SG+DAT", $this->parse3->__toString());
+        $this->assertEquals("değer+NOUN+A3SG+PNON+NOM^DB+VERB+ACQUIRE^DB+VERB+CAUS+POS^DB+NOUN+INF2+A3SG+PNON+LOC", $this->parse4->__toString());
+        $this->assertEquals("sor+VERB+RECIP^DB+VERB+CAUS+POS^DB+NOUN+INF2+A3SG+P3SG+GEN", $this->parse5->__toString());
+        $this->assertEquals("karşı+ADJ^DB+VERB+BECOME^DB+VERB+CAUS+POS+NECES+A3SG", $this->parse6->__toString());
+        $this->assertEquals("esas+ADJ^DB+NOUN+ZERO+A3PL+P2SG+ACC", $this->parse7->__toString());
+        $this->assertEquals("güç+ADJ^DB+NOUN+ZERO+A3PL+P3PL+INS", $this->parse8->__toString());
+        $this->assertEquals("bul+VERB+NEG^DB+ADJ+FUTPART+P3PL", $this->parse9->__toString());
+        $this->assertEquals("mi+QUES+PRES+A3SG", $this->parse10->__toString());
     }
 
     public function testWithList(){

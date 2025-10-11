@@ -657,7 +657,7 @@ class FsmParse extends MorphologicalParse
      * @return string returns transitionList method.
      */
 
-    public function toString__(): string
+    public function __toString(): string
     {
         return $this->getFsmParseTransitionList();
     }

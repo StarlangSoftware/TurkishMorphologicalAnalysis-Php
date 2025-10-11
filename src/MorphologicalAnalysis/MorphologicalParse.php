@@ -1164,7 +1164,7 @@ class MorphologicalParse
      *
      * @return string string result {@link String}.
      */
-    public function toString__(): string
+    public function __toString(): string
     {
         $result = $this->root->getName() . "+" . $this->inflectionalGroups[0]->__toString();
         for ($i = 1; $i < count($this->inflectionalGroups); $i++) {
