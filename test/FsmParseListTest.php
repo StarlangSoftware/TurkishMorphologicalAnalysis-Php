@@ -36,7 +36,7 @@ class FsmParseListTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(2, $this->parse1->size());
         $this->assertEquals(2, $this->parse2->size());
         $this->assertEquals(6, $this->parse3->size());
-        $this->assertEquals(4, $this->parse4->size());
+        $this->assertEquals(5, $this->parse4->size());
         $this->assertEquals(5, $this->parse5->size());
         $this->assertEquals(12, $this->parse6->size());
         $this->assertEquals(8, $this->parse7->size());
@@ -95,7 +95,7 @@ class FsmParseListTest extends \PHPUnit\Framework\TestCase
         $this->assertCount(1, $this->parse1->constructParseListForDifferentRootWithPos());
         $this->assertCount(2, $this->parse2->constructParseListForDifferentRootWithPos());
         $this->assertCount(5, $this->parse3->constructParseListForDifferentRootWithPos());
-        $this->assertCount(4, $this->parse4->constructParseListForDifferentRootWithPos());
+        $this->assertCount(5, $this->parse4->constructParseListForDifferentRootWithPos());
         $this->assertCount(5, $this->parse5->constructParseListForDifferentRootWithPos());
         $this->assertCount(7, $this->parse6->constructParseListForDifferentRootWithPos());
         $this->assertCount(2, $this->parse7->constructParseListForDifferentRootWithPos());
@@ -106,7 +106,7 @@ class FsmParseListTest extends \PHPUnit\Framework\TestCase
     public function testParsesWithoutPrefixAndSuffix(){
         $this->assertEquals('P3SG+NOM$PNON+ACC', $this->parse10->parsesWithoutPrefixAndSuffix());
         $this->assertEquals('A3PL+P3PL+NOM$A3PL+P3SG+NOM$A3PL+PNON+ACC$A3SG+P3PL+NOM', $this->parse11->parsesWithoutPrefixAndSuffix());
-        $this->assertEquals('DET$PRON+DEMONSP+A3SG+PNON+NOM$PRON+PERS+A3SG+PNON+NOM', $this->parse12->parsesWithoutPrefixAndSuffix());
+        $this->assertEquals('ADJ$DET$PRON+DEMONSP+A3SG+PNON+NOM$PRON+PERS+A3SG+PNON+NOM', $this->parse12->parsesWithoutPrefixAndSuffix());
         $this->assertEquals('NOUN+A3SG+P3SG+NOM$NOUN^DB+ADJ+ALMOST', $this->parse13->parsesWithoutPrefixAndSuffix());
     }
 }

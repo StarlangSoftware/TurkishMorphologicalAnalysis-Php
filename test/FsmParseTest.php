@@ -13,7 +13,7 @@ class FsmParseTest extends \PHPUnit\Framework\TestCase
         $this->parse1 = $fsm->morphologicalAnalysis("açılır")->getFsmParse(1);
         $this->parse2 = $fsm->morphologicalAnalysis("koparılarak")->getFsmParse(0);
         $this->parse3 = $fsm->morphologicalAnalysis("toplama")->getFsmParse(0);
-        $this->parse4 = $fsm->morphologicalAnalysis("değerlendirmede")->getFsmParse(0);
+        $this->parse4 = $fsm->morphologicalAnalysis("değerlendirmede")->getFsmParse(1);
         $this->parse5 = $fsm->morphologicalAnalysis("soruşturmasının")->getFsmParse(0);
         $this->parse6 = $fsm->morphologicalAnalysis("karşılaştırmalı")->getFsmParse(1);
         $this->parse7 = $fsm->morphologicalAnalysis("esaslarını")->getFsmParse(0);
