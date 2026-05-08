@@ -1372,7 +1372,7 @@ class FsmMorphologicalAnalyzer
                 }
             }
         }
-        if (!$isRootReplaced) {
+        if ($isRootReplaced) {
             foreach ($fsmParse as $parse) {
                 $parse->restoreOriginalForm($possibleRootLowerCased, $pronunciation);
             }
