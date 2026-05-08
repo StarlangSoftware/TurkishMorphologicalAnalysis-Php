@@ -1018,9 +1018,9 @@ class FsmMorphologicalAnalyzer
         if ($surfaceForm == null || mb_strlen($surfaceForm) == 0) {
             return false;
         }
-        return (mb_substr($surfaceForm, 0, 1) >= 'A' && mb_substr($surfaceForm, 0, 1) <= 'Z') || (mb_substr($surfaceForm, 0, 1) == '\u0130') ||
-            (mb_substr($surfaceForm, 0, 1) == '\u00dc') || (mb_substr($surfaceForm, 0, 1) == '\u011e') || (mb_substr($surfaceForm, 0, 1) == '\u015e') ||
-            (mb_substr($surfaceForm, 0, 1) == '\u00c7') || (mb_substr($surfaceForm, 0, 1) == '\u00d6'); // $i, Ü, Ğ, Ş, Ç, Ö
+        return (mb_substr($surfaceForm, 0, 1) >= 'A' && mb_substr($surfaceForm, 0, 1) <= 'Z') || (mb_substr($surfaceForm, 0, 1) == 'İ') ||
+            (mb_substr($surfaceForm, 0, 1) == 'Ç') || (mb_substr($surfaceForm, 0, 1) == 'Ğ') || (mb_substr($surfaceForm, 0, 1) == 'Ö') ||
+            (mb_substr($surfaceForm, 0, 1) == 'Ş') || (mb_substr($surfaceForm, 0, 1) == 'Ü'); // $i, Ü, Ğ, Ş, Ç, Ö
     }
 
     /**

@@ -16,6 +16,7 @@ class FsmMorphologicalAnalyzerTest extends \PHPUnit\Framework\TestCase
         $this->assertTrue($this->fsm->morphologicalAnalysis("uça")->size() != 0);
         $this->assertTrue($this->fsm->morphologicalAnalysis("TL")->size() != 0);
         $this->assertTrue($this->fsm->morphologicalAnalysis("Slack'in")->size() != 0);
+        $this->assertTrue($this->fsm->morphologicalAnalysis("İstanbul'da")->size() != 0);
         $this->assertTrue($this->fsm->morphologicalAnalysis("SPK'ya")->size() != 0);
         $this->assertTrue($this->fsm->morphologicalAnalysis("Stephen'ın")->size() != 0);
     }
